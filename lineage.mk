@@ -15,17 +15,17 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/xiaomi/ido/full_ido.mk)
+$(call inherit-product, device/LYF/mobee01a/full_mobee01a.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_ido
-BOARD_VENDOR := Xiaomi
+PRODUCT_NAME := lineage_mobee01a
+BOARD_VENDOR := LYF
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-ckt
 
-# Build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="Xiaomi/ido/ido:5.1.1/LMY47V/V8.1.3.0.LAIMIDI:user/release-keys" \
-    PRIVATE_BUILD_DESC="ido-user 5.1.1 LMY47V V8.1.3.0.LAIMIDI release-keys"
+    BUILD_FINGERPRINT=LYF/LS-5015/LS-5015:6.0.1/MMB29M/434:user/release-keys \
+    PRIVATE_BUILD_DESC="mobee01a_msm8916_64-user 6.0.1 MMB29M 701 release-keys"
+endif

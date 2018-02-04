@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/xiaomi/ido
+LOCAL_PATH := device/LYF/mobee01a
 
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
@@ -51,8 +51,8 @@ BOARD_RAMDISK_OFFSET := 0x02000000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_APPEND_DTB := true
-TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8916
-TARGET_KERNEL_CONFIG := lineage_ido_defconfig
+TARGET_KERNEL_SOURCE := kernel/LYF/mobee01a
+TARGET_KERNEL_CONFIG := nichrome_defconfig
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -85,7 +85,7 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
     hardware/cyanogen/cmhw \
-    device/xiaomi/ido/cmhw
+    device/LYF/mobee01a/cmhw
 
 # CNE
 BOARD_USES_QCNE := true
@@ -127,9 +127,9 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 USE_DEVICE_SPECIFIC_GPS := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_ido
+TARGET_INIT_VENDOR_LIB := libinit_mobee01a
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_ido
+TARGET_RECOVERY_DEVICE_MODULES := libinit_mobee01a
 
 # Keymaster
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
@@ -182,4 +182,4 @@ WIFI_DRIVER_FW_PATH_STA          := "sta"
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 
 # inherit from the proprietary version
--include vendor/xiaomi/ido/BoardConfigVendor.mk
+-include vendor/LYF/mobee01a/BoardConfigVendor.mk
